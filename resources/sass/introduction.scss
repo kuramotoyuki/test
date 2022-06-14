@@ -1,21 +1,66 @@
-
 body {
-    font-family: 'Nunito', sans-serif;
-}
-
-.english-title {
+    font-family: "Nunito", sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .english-title {
     position: absolute;
     right: 0;
     top: 55px;
     z-index: 1;
-    font-size: 10.2vw;
+    font-size: min(10.2vw, 80px);
     opacity: 1;
     color: #f1f2f1;
     transform: translate(0px, 0px);
     z-index: -1;
-}
-
-.list-group-item-action {
-    text-decoration: none;
-    font-size: calc(0.5em + 1.2vw);
-}
+  }
+  
+  .list-group-item-action {
+    font-size: calc(0.3em + 0.9vw);
+  }
+  
+  .main-image {
+    padding: 0;
+    /* border-radius: 10px 10px 10px 10px; */
+    z-index: -1;
+  }
+  
+  .introduction-outline {
+    white-space: nowrap;
+  }
+  
+  .itroduction-subtitle {
+    padding: 0.25em 0.5em;/*上下 左右の余白*/
+    color: #494949;/*文字色*/
+    background: transparent;/*背景透明に*/
+    border-left: solid 5px #7db4e6;/*左線*/
+  }
+  
+  .footer {
+    background-color: #f1f2f1;
+  }
+  
+  .footer-link {
+    border-bottom: solid 0.1px #555;
+  }
+  
+  .footer-contents-main {
+    border-bottom: none;
+  }
+  
+  @media (min-width: 576px) {
+    .main-image {
+      border-radius: 10px 10px 10px 10px;
+    }
+  
+    .footer-link {
+      border-bottom: none;
+    }
+  
+    .footer-contents-main {
+      border-bottom: solid 0.1px #555;
+    }
+  }
